@@ -8,7 +8,9 @@
     "build": "tsc",
     "report": "node dist/report-status.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0"
+  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0"
