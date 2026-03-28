@@ -1,0 +1,14 @@
+{
+  "repoId": "execution-template",
+  "name": "Execution Template",
+  "ok": true,
+  "lastUpdatedAt": null,
+  "git": {
+    "head": null,
+    "branch": null
+  },
+  "signals": {
+    "hasStatusFile": true,
+    "initialized": false
+  }
+}

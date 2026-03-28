@@ -1,0 +1,16 @@
+{
+  "name": "@execution-template/status-reporter",
+  "version": "1.0.0",
+  "description": "MCP client for reporting status to Brain",
+  "main": "dist/report-status.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "report": "node dist/report-status.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,36 @@
+# Execution Repo - Cursor Rules
+
+You are working in a Level 2 execution repo that is part of a larger portfolio managed by the Command Center (Brain).
+
+## Context
+
+- This repo is autonomous but reports status to the Brain
+- Status contract is at `status/status.json`
+- Changes should be scoped to this repo unless explicitly instructed
+
+## Non-negotiables
+
+1. **Status Contract**: Do not modify `status/status.json` schema without coordinating with Brain
+2. **Small PRs**: One feature slice per branch
+3. **Tests**: Keep tests passing; don't leave the repo broken
+4. **Secrets**: Never commit secrets or credentials
+
+## File Ownership
+
+- `/status/**` - Reporting contract (changes need coordination)
+- `/src/**` - Implementation code (primary workspace)
+- `/docs/**` - Documentation (keep updated with changes)
+- `/mcp/**` - MCP client infrastructure (rarely modified)
+
+## When Making Changes
+
+1. Check current status in `status/status.json`
+2. Make changes in small, focused commits
+3. Update status after meaningful milestones
+4. Run tests before considering work complete
+
+## Coordination
+
+- If changes affect shared interfaces, update tests and docs together
+- For portfolio-wide changes, coordinate through Brain
+- Respect file locks when present

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(src/**)",
+      "Edit(status/**)",
+      "Edit(docs/**)",
+      "Bash(npm *)",
+      "Bash(git *)",
+      "Bash(./scripts/*)"
+    ],
+    "deny": [
+      "Edit(.env*)",
+      "Edit(**/secrets/**)"
+    ]
+  }
+}
