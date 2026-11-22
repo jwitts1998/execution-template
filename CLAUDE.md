@@ -57,11 +57,20 @@ Or via hook (automatic on session end).
 3. **No secrets** - Never hardcode credentials
 4. **Update status** - Report progress after each milestone
 
+## File Ownership
+
+- `status/**` - Reporting contract. Do not change the `status/status.json` schema without coordinating with Brain
+- `src/**` - Implementation code (primary workspace)
+- `docs/**` - Documentation. Keep it updated alongside code changes
+- `mcp/**` - MCP client infrastructure. Rarely modified
+
 ## Coordination with Brain
 
 - This repo is registered with the Brain's portfolio MCP server
 - Status is rolled up into the global `runtime/status.json`
 - Respect locks when editing shared contracts
+- Keep changes scoped to this repo; coordinate portfolio-wide changes through Brain
+- When a change touches a shared interface, update its tests and docs in the same change
 
 ## Environment
 
