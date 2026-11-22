@@ -38,7 +38,8 @@ mcp/
 scripts/
   report-status.sh      # Convenience wrapper
 .claude/                # Claude Code configuration
-.cursor/                # Cursor configuration
+CLAUDE.md               # Project instructions for Claude Code
+AGENTS.md               # Agent roles and handoff protocol
 ```
 
 ## Status Contract
